@@ -303,10 +303,10 @@ var Calculator = (function () {
             //如果是一个数字或者小数点，直接显示出来
             if (keyCode < 11 || (keyCode > 39 && keyCode < 46)) {
                 cal.showInput(cal.keyCodes[keyCode]);
-                if (cal.type === 3) {
-                    //如果是程序员型，那么需要同步显示4中进制的值
-                    cal.showScales(cal.getShowInput());
-                }
+                // if (cal.type === 3) {
+                //     //如果是程序员型，那么需要同步显示4中进制的值
+                //     cal.showScales(cal.getShowInput());
+                // }
             } else {
                 switch (keyCode) {
                     //正负号
